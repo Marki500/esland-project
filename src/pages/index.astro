@@ -1,9 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Video from '../components/Video.astro';
+import Intro from '../components/Intro.astro';
+import Bento from '../components/Bento.astro';
+import Prefooter from '../components/Prefooter.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Bienvenidos a los ESLAND.">
+<Layout 
+	title="Premios ESLAND 2024. Celebrando los mejores premios para streamers."
+	description="Los premios de la comunidad hispanohablante para los streamers.">
+	<Video />
+	<main>
+		<Intro />
+		<Bento />
+		<Prefooter />
+	</main>
+	<Footer />
 </Layout>
 
 <style>
